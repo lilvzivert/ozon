@@ -3,9 +3,8 @@ const CHAT_ID = '-1001693386750';
 const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
 
 
-document.getElementById('form').addEventListener('submit', function(){
-    const b = number.value
-    console.log(b);
+document.getElementById('form').addEventListener('submit', function(e){
+    e.preventDefault();
     const message = `<b>Номер телефона: +7-<code>${this.number.value}</code></b>\n`
 
 
